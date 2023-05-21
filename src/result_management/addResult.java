@@ -258,6 +258,9 @@ public class addResult extends javax.swing.JFrame {
                 //we are checking whether this roll nuber already exist in the student table or not
                 //if student is not existing means we have entered the marks for invalid student
                 st.executeUpdate("Insert into results(rollno, physics, maths, em, dbms, os) values('"+rollno+"', '"+physics+"', '"+maths+"', '"+em+"', '"+dbms+"', '"+os+"')");
+                JOptionPane.showMessageDialog(null, "Marks added successfully");
+                setVisible(false);
+                new addResult().setVisible(true);
             }else {
                 JOptionPane.showMessageDialog(null, "This roll number is not registered, check the roll number once more");
             }
