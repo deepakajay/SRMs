@@ -28,6 +28,7 @@ public class index extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         admin = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -40,7 +41,7 @@ public class index extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, 180, 40));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 180, 40));
 
         admin.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         admin.setText("Admin");
@@ -49,9 +50,15 @@ public class index extends javax.swing.JFrame {
                 adminActionPerformed(evt);
             }
         });
-        getContentPane().add(admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 270, 180, 40));
+        getContentPane().add(admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 360, 180, 40));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/result_management/Stairs_University_High_School_Los_Angeles,_California_02.jpg"))); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(255, 153, 153));
+        jLabel2.setFont(new java.awt.Font("Segoe UI Black", 2, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("ABC SCHOOL");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 380, 110));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/result_management/school_corridor_by_mb0sco_dasp5ij-fullview.png"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 500));
 
@@ -110,5 +117,6 @@ public class index extends javax.swing.JFrame {
     private javax.swing.JButton admin;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
